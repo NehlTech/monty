@@ -202,7 +202,7 @@ $ cd Betty; ./install.sh
 
 ## :blue_book: Author
 
-- **Bright Adu-Boahene** - [@nhelTech](https://github.com/NehlTech)
+- **Bright Adu-Boahene** - [@nehlTech](https://github.com/NehlTech)
 
 ## :mag: License
 
