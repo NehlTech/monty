@@ -6,29 +6,28 @@ Our interpreter can be run as either a stack (LIFO) or queue (FIFO). Mode can be
 
 ## :running: Getting Started
 
-* [Ubuntu 14.04 LTS](http://releases.ubuntu.com/14.04/) - Operating system reqd.
+- [Ubuntu 14.04 LTS](http://releases.ubuntu.com/14.04/) - Operating system reqd.
 
-* [GCC 4.8.4](https://gcc.gnu.org/gcc-4.8/) - Compiler used
-
+- [GCC 4.8.4](https://gcc.gnu.org/gcc-4.8/) - Compiler used
 
 ## :warning: Prerequisites
 
-* Must have `git` installed.
+- Must have `git` installed.
 
-* Must have repository cloned.
+- Must have repository cloned.
 
 ```
 $ sudo apt-get install git
 ```
-
 
 ## :arrow_down: Installing and Using
 
 Clone the repository into a new directory:
 
 ```
-$ git clone https://github.com/BennettDixon/monty.git
+$ git clone https://github.com/NehlTech/monty.git
 ```
+
 Compile with the following:
 
 ```
@@ -41,73 +40,87 @@ Run the interpreter on a file:
 ./monty file.m
 ```
 
-
 ## :wrench: Monty Opcodes
 
-* **push**
-  * Usage: `push <int>`
-  * Pushes an element to the stack.
-  * The parameter `<int>` must be an integer.
+- **push**
 
-* **pall**
-  * Prints all values in the stack/queue, starting from the top.
+  - Usage: `push <int>`
+  - Pushes an element to the stack.
+  - The parameter `<int>` must be an integer.
 
-* **pint**
-  * Prints the top value of the stack/queue.
+- **pall**
 
-* **pop**
-  * Removes the top element of the stack/queue.
+  - Prints all values in the stack/queue, starting from the top.
 
-* **swap**
-  * Swaps the top two elements of the stack/queue.
+- **pint**
 
-* **nop**
-  * Does not do anything.
+  - Prints the top value of the stack/queue.
 
-* **add**
-  * Adds the top two elements of the stack/queue.
-  * The result is stored in the second element from the top and the top element is popped.
+- **pop**
 
-* **sub**
-  * Subtracts the top element of the stack/queue from the second element from the top.
-  * The result is stored in the second element from the top and the top element is removed.
+  - Removes the top element of the stack/queue.
 
-* **mul**
-  * Multiplies the top two elements of the stack/queue.
-  * The result is stored in the second element from the top and the top element is removed.
+- **swap**
 
-* **div**
-  * Divides the second element from the top of the stack/queue by the top element.
-  * The result is stored in the second element from the top and the top element is removed.
+  - Swaps the top two elements of the stack/queue.
 
-* **mod**
-  * Computes the modulus of the second element from the top of the stack/queue divided by the top element.
-  * The result is stored in the second element from the top and the top element is removed.
+- **nop**
 
-* **pchar**
-  * Prints the character value of the top element of the stack/queue.
-  * The integer at the top is treated as an ASCII value.
+  - Does not do anything.
 
-* **pstr**
-  * Prints the string contained in the stack/queue.
-  * Prints characters element by element until the stack/queue is empty, a value is `0`, or an error occurs.
+- **add**
 
-* **rotl**
-  * Rotates the top element of the stack/queue to the bottom.
+  - Adds the top two elements of the stack/queue.
+  - The result is stored in the second element from the top and the top element is popped.
 
-* **rotr**
-  * Rotates the bottom element of the stack/queue to the top.
+- **sub**
 
-* **stack**
-  * Switches a queue to stack mode.
+  - Subtracts the top element of the stack/queue from the second element from the top.
+  - The result is stored in the second element from the top and the top element is removed.
 
-* **queue**
-  * Switches a stack to queue mode.
+- **mul**
+
+  - Multiplies the top two elements of the stack/queue.
+  - The result is stored in the second element from the top and the top element is removed.
+
+- **div**
+
+  - Divides the second element from the top of the stack/queue by the top element.
+  - The result is stored in the second element from the top and the top element is removed.
+
+- **mod**
+
+  - Computes the modulus of the second element from the top of the stack/queue divided by the top element.
+  - The result is stored in the second element from the top and the top element is removed.
+
+- **pchar**
+
+  - Prints the character value of the top element of the stack/queue.
+  - The integer at the top is treated as an ASCII value.
+
+- **pstr**
+
+  - Prints the string contained in the stack/queue.
+  - Prints characters element by element until the stack/queue is empty, a value is `0`, or an error occurs.
+
+- **rotl**
+
+  - Rotates the top element of the stack/queue to the bottom.
+
+- **rotr**
+
+  - Rotates the bottom element of the stack/queue to the top.
+
+- **stack**
+
+  - Switches a queue to stack mode.
+
+- **queue**
+  - Switches a stack to queue mode.
 
 :arrow_forward: Opcodes preceeded by a `#` are treated as comments and the corresponding line is ignored.
 
 :arrow_forward: Lines can be empty and can contain any number of spaces before or after an opcode and its argument (only the first opcode and/or argument is taken into account).
-
 
 ## :clipboard: Examples
 
@@ -183,29 +196,19 @@ $ git clone https://github.com/holbertonschool/Betty.git
 $ cd Betty; ./install.sh
 ```
 
-
 ## :pencil: Version
 
-* 0.1.0
+- 0.1.0
 
+## :blue_book: Author
 
-## :blue_book: Authors
-
-* **Brennan D Baraban** - [@bdbaraban](https://github.com/bdbaraban)
-
-* **Bennett Dixon** - [@BennettDixon](https://github.com/BennettDixon)
-
+- **Bright Adu-Boahene** - [@nhelTech](https://github.com/NehlTech)
 
 ## :mag: License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-
 ## :mega: Acknowledgments
 
-* Holberton School (providing guidance)
-* Stack Overflow (help on various memory errors (not leaks))
-
-<p align="center">
-  <img src="http://www.holbertonschool.com/holberton-logo.png">
-</p>
+- Alx (providing guidance)
+- Stack Overflow (help on various memory errors (not leaks))
